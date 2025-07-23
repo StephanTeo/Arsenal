@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arsenal - Sua Ferramenta Definitiva</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#3B82F6',
+secondary: '#8B5CF6'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+<style>
+:where([class^="ri-"])::before {
+content: "\f3c2";
+}
+body {
+font-family: 'Inter', sans-serif;
+}
+.gradient-bg {
+background: linear-gradient(135deg, #1e3a8a 0%, #7c3aed 50%, #3730a3 100%);
+}
+.card-hover {
+transition: all 0.3s ease;
+}
+.card-hover:hover {
+transform: translateY(-4px);
+box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+.section-bg {
+background: linear-gradient(to bottom, #f8fafc, #ffffff);
+}
+</style>
+</head>
+<body class="bg-white text-gray-900">
+<!-- Header Hero Section -->
+<section class="gradient-bg min-h-screen flex items-center justify-center relative overflow-hidden" style="background-image: url('https://readdy.ai/api/search-image?query=modern%20digital%20workspace%20with%20holographic%20interface%20elements%2C%20futuristic%20technology%20background%2C%20dark%20blue%20and%20purple%20gradient%20atmosphere%2C%20minimalist%20design%2C%20professional%20tech%20environment%2C%20clean%20geometric%20patterns&width=1920&height=1080&seq=hero-bg&orientation=landscape'); background-size: cover; background-position: center;">
+<div class="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-purple-900/90"></div>
+<div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+<div class="mb-8">
+<h1 class="text-white text-5xl font-['Pacifico'] mb-4">Arsenal</h1>
+</div>
+<h2 class="text-white text-4xl md:text-6xl font-bold mb-6 leading-tight">
+O Arsenal do<br>
+Gestor de Tráfego para Negócios Locais
+</h2>
+<p class="text-blue-100 text-xl md:text-2xl mb-8 leading-relaxed max-w-3xl mx-auto">
+Domine as estratégias e ferramentas que vão transformar você em um gestor de tráfego de alta performance para negócios locais
+</p>
+<button class="bg-white text-blue-900 px-8 py-4 text-lg font-semibold !rounded-button hover:bg-blue-50 transition-all duration-300 shadow-lg hover:shadow-xl whitespace-nowrap mb-8">
+Começar Agora
+</button>
+<div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 max-w-3xl mx-auto">
+<div class="grid md:grid-cols-3 gap-4 text-center">
+<div>
+<div class="text-2xl font-bold text-white mb-1">97%</div>
+<div class="text-blue-100 text-sm">Taxa de Satisfação</div>
+</div>
+<div>
+<div class="text-2xl font-bold text-white mb-1">+200</div>
+<div class="text-blue-100 text-sm">Alunos Ativos</div>
+</div>
+<div>
+<div class="text-2xl font-bold text-white mb-1">+150</div>
+<div class="text-blue-100 text-sm">Clientes atendidos</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Benefits Section -->
+<section class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-gray-900 mb-4">Por Que o Arsenal é Diferente?</h2>
+<p class="text-xl text-gray-600 max-w-2xl mx-auto">Aprenda com quem realmente entende de tráfego pago para negócios locais</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="card-hover bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+<div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+<i class="ri-rocket-line text-2xl text-primary"></i>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-4">Método Comprovado</h3>
+<p class="text-gray-600 leading-relaxed">Aprenda estratégias testadas e aprovadas que já geraram mais de 150 mil leads qualificados para negócios locais em diferentes nichos.</p>
+</div>
+<div class="card-hover bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+<div class="w-16 h-16 bg-secondary/10 rounded-xl flex items-center justify-center mb-6">
+<i class="ri-shield-check-line text-2xl text-secondary"></i>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-4">Ferramentas Exclusivas</h3>
+<p class="text-gray-600 leading-relaxed">Acesso a ferramentas que automatizam seu trabalho e templates prontos para usar em suas campanhas de tráfego pago.</p>
+</div>
+<div class="card-hover bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+<div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+<i class="ri-user-star-line text-2xl text-primary"></i>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-4">Mentoria em Grupo</h3>
+<p class="text-gray-600 leading-relaxed">Encontros mensais ao vivo para tirar dúvidas, analisar campanhas e receber feedbacks diretos sobre seus projetos.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Problem & Solution Section -->
+<section class="py-20 section-bg">
+<div class="max-w-7xl mx-auto px-4">
+<!-- Problem -->
+<div class="grid md:grid-cols-2 gap-16 items-center mb-20">
+<div>
+<h2 class="text-4xl font-bold text-gray-900 mb-6">Problemas que Todo Gestor de Tráfego Enfrenta</h2>
+<div class="space-y-6">
+<div class="flex items-start space-x-4">
+<div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+<i class="ri-close-line text-red-600"></i>
+</div>
+<p class="text-gray-700 text-lg">Campanhas que não geram resultados consistentes para seus clientes</p>
+</div>
+<div class="flex items-start space-x-4">
+<div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+<i class="ri-close-line text-red-600"></i>
+</div>
+<p class="text-gray-700 text-lg">Dificuldade para captar e reter clientes que pagam bem</p>
+</div>
+<div class="flex items-start space-x-4">
+<div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+<i class="ri-close-line text-red-600"></i>
+</div>
+<p class="text-gray-700 text-lg">Falta de processos e ferramentas para otimizar o trabalho</p>
+</div>
+<div class="flex items-start space-x-4">
+<div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+<i class="ri-close-line text-red-600"></i>
+</div>
+<p class="text-gray-700 text-lg">Insegurança para cobrar honorários mais altos pelo seu trabalho</p>
+</div>
+</div>
+</div>
+<div class="relative">
+<img src="https://readdy.ai/api/search-image?query=frustrated%20entrepreneur%20looking%20at%20declining%20charts%20on%20computer%20screen%2C%20stress%20and%20confusion%2C%20modern%20office%20environment%2C%20professional%20business%20setting%2C%20realistic%20photography%20style&width=600&height=400&seq=problem-img&orientation=landscape" alt="Problema" class="rounded-xl shadow-lg w-full object-cover object-top">
+</div>
+</div>
+<!-- Solution -->
+<div class="grid md:grid-cols-2 gap-16 items-center">
+<div class="relative order-2 md:order-1">
+<img src="https://readdy.ai/api/search-image?query=successful%20entrepreneur%20celebrating%20with%20laptop%20showing%20growth%20charts%2C%20achievement%20and%20success%2C%20modern%20workspace%2C%20professional%20business%20environment%2C%20realistic%20photography%20style&width=600&height=400&seq=solution-img&orientation=landscape" alt="Solução" class="rounded-xl shadow-lg w-full object-cover object-top">
+</div>
+<div class="order-1 md:order-2">
+<h2 class="text-4xl font-bold text-gray-900 mb-6">A Solução Definitiva</h2>
+<div class="space-y-6">
+<div class="flex items-start space-x-4">
+<div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+<i class="ri-check-line text-green-600"></i>
+</div>
+<p class="text-gray-700 text-lg">Estratégias comprovadas que já geraram milhões em vendas online</p>
+</div>
+<div class="flex items-start space-x-4">
+<div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+<i class="ri-check-line text-green-600"></i>
+</div>
+<p class="text-gray-700 text-lg">Passo a passo detalhado para implementar cada técnica</p>
+</div>
+<div class="flex items-start space-x-4">
+<div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+<i class="ri-check-line text-green-600"></i>
+</div>
+<p class="text-gray-700 text-lg">Suporte direto com especialistas que dominam o mercado</p>
+</div>
+<div class="flex items-start space-x-4">
+<div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+<i class="ri-check-line text-green-600"></i>
+</div>
+<p class="text-gray-700 text-lg">Sistema escalável que cresce junto com seu negócio</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Features Section -->
+<section class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-gray-900 mb-4">O Que Você Vai Receber</h2>
+<p class="text-xl text-gray-600 max-w-2xl mx-auto">Um arsenal completo de ferramentas e estratégias para dominar o digital</p>
+</div>
+<div class="grid md:grid-cols-2 gap-8">
+<div class="card-hover bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-xl border border-blue-100">
+<div class="w-16 h-16 bg-primary rounded-xl flex items-center justify-center mb-6">
+<i class="ri-brain-line text-2xl text-white"></i>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-4">Estratégias Avançadas</h3>
+<p class="text-gray-700 leading-relaxed mb-4">Acesso às técnicas mais avançadas de marketing digital, vendas online e automação que os grandes players usam para dominar seus mercados.</p>
+<ul class="space-y-2 text-gray-600">
+<li class="flex items-center space-x-2">
+<i class="ri-arrow-right-s-line text-primary"></i>
+<span>Funis de vendas de alta conversão</span>
+</li>
+<li class="flex items-center space-x-2">
+<i class="ri-arrow-right-s-line text-primary"></i>
+<span>Automação de marketing avançada</span>
+</li>
+<li class="flex items-center space-x-2">
+<i class="ri-arrow-right-s-line text-primary"></i>
+<span>Técnicas de copywriting persuasivo</span>
+</li>
+</ul>
+</div>
+<div class="card-hover bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-xl border border-purple-100">
+<div class="w-16 h-16 bg-secondary rounded-xl flex items-center justify-center mb-6">
+<i class="ri-tools-line text-2xl text-white"></i>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-4">Ferramentas Exclusivas</h3>
+<p class="text-gray-700 leading-relaxed mb-4">Templates, scripts e ferramentas prontas para usar que economizam centenas de horas de trabalho e garantem resultados profissionais.</p>
+<ul class="space-y-2 text-gray-600">
+<li class="flex items-center space-x-2">
+<i class="ri-arrow-right-s-line text-secondary"></i>
+<span>Templates de landing pages</span>
+</li>
+<li class="flex items-center space-x-2">
+<i class="ri-arrow-right-s-line text-secondary"></i>
+<span>Scripts de vendas testados</span>
+</li>
+<li class="flex items-center space-x-2">
+<i class="ri-arrow-right-s-line text-secondary"></i>
+<span>Calculadoras de ROI</span>
+</li>
+</ul>
+</div>
+<div class="card-hover bg-gradient-to-br from-green-50 to-blue-50 p-8 rounded-xl border border-green-100">
+<div class="w-16 h-16 bg-green-600 rounded-xl flex items-center justify-center mb-6">
+<i class="ri-user-search-line text-2xl text-white"></i>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-4">Estratégias de Captação</h3>
+<p class="text-gray-700 leading-relaxed mb-4">Domine as melhores técnicas para atrair clientes qualificados e converter em vendas reais para negócios locais.</p>
+<ul class="space-y-2 text-gray-600">
+<li class="flex items-center space-x-2">
+<i class="ri-arrow-right-s-line text-green-600"></i>
+<span>Campanhas de alta conversão</span>
+</li>
+<li class="flex items-center space-x-2">
+<i class="ri-arrow-right-s-line text-green-600"></i>
+<span>Segmentação avançada de público</span>
+</li>
+<li class="flex items-center space-x-2">
+<i class="ri-arrow-right-s-line text-green-600"></i>
+<span>Otimização de funis de vendas</span>
+</li>
+</ul>
+</div>
+<div class="card-hover bg-gradient-to-br from-orange-50 to-red-50 p-8 rounded-xl border border-orange-100">
+<div class="w-16 h-16 bg-orange-600 rounded-xl flex items-center justify-center mb-6">
+<i class="ri-community-line text-2xl text-white"></i>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-4">Comunidade Exclusiva</h3>
+<p class="text-gray-700 leading-relaxed mb-4">Faça parte de uma comunidade de empreendedores de alto nível. Network, parcerias e troca de experiências que valem ouro.</p>
+<ul class="space-y-2 text-gray-600">
+<li class="flex items-center space-x-2">
+<i class="ri-arrow-right-s-line text-orange-600"></i>
+<span>Grupo VIP no WhatsApp</span>
+</li>
+<li class="flex items-center space-x-2">
+<i class="ri-arrow-right-s-line text-orange-600"></i>
+<span>Eventos exclusivos mensais</span>
+</li>
+<li class="flex items-center space-x-2">
+<i class="ri-arrow-right-s-line text-orange-600"></i>
+<span>Oportunidades de parcerias</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-20 bg-gray-50">
+<div class="max-w-7xl mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-gray-900 mb-4">O Que Dizem Nossos Alunos</h2>
+<p class="text-xl text-gray-600 max-w-2xl mx-auto">Depoimentos de gestores que transformaram seus resultados com o Arsenal</p>
+</div>
+<div class="relative">
+<div class="overflow-hidden">
+<div class="testimonial-slider flex transition-transform duration-300 ease-in-out">
+<div class="testimonial-slide flex-none w-full md:w-1/3 px-4">
+<div class="bg-white p-8 rounded-xl shadow-lg">
+<div class="flex items-center mb-6">
+<img src="https://readdy.ai/api/search-image?query=professional%20young%20woman%20smiling%2C%20headshot%20portrait%2C%20business%20attire%2C%20natural%20lighting%2C%20clean%20background&width=100&height=100&seq=test1&orientation=squarish" alt="Depoimento 1" class="w-16 h-16 rounded-full object-cover object-top">
+<div class="ml-4">
+<h4 class="font-bold text-gray-900">Isabella Santos</h4>
+<p class="text-gray-600">Gestora de Tráfego</p>
+</div>
+</div>
+<p class="text-gray-700 leading-relaxed mb-4">"Depois do Arsenal, consegui triplicar minha carteira de clientes. As estratégias de captação são simplesmente fantásticas e os resultados aparecem muito rápido."</p>
+<div class="flex text-primary">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+</div>
+<div class="testimonial-slide flex-none w-full md:w-1/3 px-4">
+<div class="bg-white p-8 rounded-xl shadow-lg">
+<div class="flex items-center mb-6">
+<img src="https://readdy.ai/api/search-image?query=professional%20man%20in%20his%2030s%2C%20confident%20smile%2C%20business%20casual%2C%20modern%20office%20background&width=100&height=100&seq=test2&orientation=squarish" alt="Depoimento 2" class="w-16 h-16 rounded-full object-cover object-top">
+<div class="ml-4">
+<h4 class="font-bold text-gray-900">Rafael Oliveira</h4>
+<p class="text-gray-600">Especialista em Facebook Ads</p>
+</div>
+</div>
+<p class="text-gray-700 leading-relaxed mb-4">"As ferramentas exclusivas economizam horas do meu trabalho. Agora consigo entregar resultados muito melhores para meus clientes em menos tempo."</p>
+<div class="flex text-primary">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+</div>
+<div class="testimonial-slide flex-none w-full md:w-1/3 px-4">
+<div class="bg-white p-8 rounded-xl shadow-lg">
+<div class="flex items-center mb-6">
+<img src="https://readdy.ai/api/search-image?query=professional%20latina%20woman%2C%20mid%2030s%2C%20warm%20smile%2C%20business%20professional%2C%20modern%20office%20setting&width=100&height=100&seq=test3&orientation=squarish" alt="Depoimento 3" class="w-16 h-16 rounded-full object-cover object-top">
+<div class="ml-4">
+<h4 class="font-bold text-gray-900">Carolina Martinez</h4>
+<p class="text-gray-600">Gestora de Performance</p>
+</div>
+</div>
+<p class="text-gray-700 leading-relaxed mb-4">"O suporte é incrível. Sempre que tenho uma dúvida, recebo ajuda rapidamente. Meus honorários aumentaram 150% em 3 meses."</p>
+<div class="flex text-primary">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+</div>
+<div class="testimonial-slide flex-none w-full md:w-1/3 px-4">
+<div class="bg-white p-8 rounded-xl shadow-lg">
+<div class="flex items-center mb-6">
+<img src="https://readdy.ai/api/search-image?query=young%20businessman%20with%20glasses%2C%20professional%20headshot%2C%20confident%20expression%2C%20modern%20office&width=100&height=100&seq=test4&orientation=squarish" alt="Depoimento 4" class="w-16 h-16 rounded-full object-cover object-top">
+<div class="ml-4">
+<h4 class="font-bold text-gray-900">Pedro Henrique</h4>
+<p class="text-gray-600">Consultor Digital</p>
+</div>
+</div>
+<p class="text-gray-700 leading-relaxed mb-4">"Implementei as estratégias do Arsenal e consegui aumentar em 200% o ROI das campanhas dos meus clientes. Material completo e atual."</p>
+<div class="flex text-primary">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+</div>
+<div class="testimonial-slide flex-none w-full md:w-1/3 px-4">
+<div class="bg-white p-8 rounded-xl shadow-lg">
+<div class="flex items-center mb-6">
+<img src="https://readdy.ai/api/search-image?query=professional%20asian%20woman%2C%20early%2030s%2C%20business%20attire%2C%20friendly%20smile%2C%20office%20environment&width=100&height=100&seq=test5&orientation=squarish" alt="Depoimento 5" class="w-16 h-16 rounded-full object-cover object-top">
+<div class="ml-4">
+<h4 class="font-bold text-gray-900">Amanda Tanaka</h4>
+<p class="text-gray-600">Marketing Manager</p>
+</div>
+</div>
+<p class="text-gray-700 leading-relaxed mb-4">"A comunidade é sensacional! Aprendo muito com as experiências compartilhadas e o networking gerou várias parcerias."</p>
+<div class="flex text-primary">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+</div>
+<div class="testimonial-slide flex-none w-full md:w-1/3 px-4">
+<div class="bg-white p-8 rounded-xl shadow-lg">
+<div class="flex items-center mb-6">
+<img src="https://readdy.ai/api/search-image?query=mature%20businessman%2C%20professional%20portrait%2C%20executive%20look%2C%20modern%20corporate%20setting&width=100&height=100&seq=test6&orientation=squarish" alt="Depoimento 6" class="w-16 h-16 rounded-full object-cover object-top">
+<div class="ml-4">
+<h4 class="font-bold text-gray-900">Ricardo Mendes</h4>
+<p class="text-gray-600">Diretor de Marketing</p>
+</div>
+</div>
+<p class="text-gray-700 leading-relaxed mb-4">"Os templates e processos do Arsenal são um diferencial incrível. Economizei semanas de trabalho e melhorei muito a entrega."</p>
+<div class="flex text-primary">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+<button class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white p-3 rounded-full shadow-lg hover:bg-gray-50 focus:outline-none prev-button z-10 -ml-5">
+<i class="ri-arrow-left-s-line text-2xl text-gray-600"></i>
+</button>
+<button class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white p-3 rounded-full shadow-lg hover:bg-gray-50 focus:outline-none next-button z-10 -mr-5">
+<i class="ri-arrow-right-s-line text-2xl text-gray-600"></i>
+</button>
+<div class="flex justify-center mt-8 space-x-2 dots-container">
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="py-20 gradient-bg relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-purple-900/80"></div>
+<div class="relative z-10 max-w-4xl mx-auto text-center px-4">
+<h2 class="text-[#FF4500] text-4xl md:text-5xl font-bold mb-6">
+CHEGOU A SUA HORA DE DESTRAVAR O PRÓXIMO NÍVEL DA SUA GESTÃO DE TRÁFEGO!
+</h2>
+<div class="text-white text-lg space-y-3 mb-8">
+<p class="flex items-center justify-center gap-2">
+<span>• Script de vendas:</span>
+<span class="line-through text-gray-400">De R$ 47,90</span>
+<span>Por R$ 0,00</span>
+</p>
+<p class="flex items-center justify-center gap-2">
+<span>• Modelos de contratos:</span>
+<span class="line-through text-gray-400">De R$ 19,90</span>
+<span>Por R$ 0,00</span>
+</p>
+<p class="flex items-center justify-center gap-2">
+<span>• Modelo de processos:</span>
+<span class="line-through text-gray-400">De R$ 67,90</span>
+<span>Por R$ 0,00</span>
+</p>
+<p class="flex items-center justify-center gap-2">
+<span>• Dashboard:</span>
+<span class="line-through text-gray-400">De R$ 297,00 Anual</span>
+<span>Por R$ 0,00 Vitalício</span>
+</p>
+<p class="flex items-center justify-center gap-2">
+<span>• Ebook Quebras de Objeções:</span>
+<span class="line-through text-gray-400">De R$ 29,90</span>
+<span>Por R$ 0,00</span>
+</p>
+<p class="flex items-center justify-center gap-2">
+<span>• Funil de captação:</span>
+<span class="line-through text-gray-400">De R$ 197,00</span>
+<span>Por R$ 0,00</span>
+</p>
+</div>
+<div class="mb-8">
+<p class="text-white text-xl mb-2">Total que você iria pagar:</p>
+<p class="text-[#FF4500] text-2xl line-through mb-4">R$ 659,60</p>
+<p class="text-white text-2xl font-bold mb-2">VALOR DO ARSENAL:</p>
+<p class="text-green-400 text-4xl font-bold">R$ 59,90</p>
+</div>
+<button class="bg-[#FF4500] text-white px-12 py-4 text-xl font-bold !rounded-button hover:bg-[#FF6347] transition-all duration-300 shadow-xl hover:shadow-2xl whitespace-nowrap">
+Quero o Arsenal
+</button>
+<p class="text-blue-200 text-sm mt-4">
+Últimas 12 vagas disponíveis para esta turma
+</p>
+<div class="space-y-4 mt-8">
+<div class="flex items-center justify-center space-x-3 text-green-300">
+<i class="ri-shield-check-line text-xl"></i>
+<span class="text-lg">Garantia de 30 dias ou seu dinheiro de volta</span>
+</div>
+<div class="flex items-center justify-center space-x-3 text-green-300">
+<i class="ri-time-line text-xl"></i>
+<span class="text-lg">Acesso imediato após a confirmação do pagamento</span>
+</div>
+<div class="flex items-center justify-center space-x-3 text-green-300">
+<i class="ri-lock-line text-xl"></i>
+<span class="text-lg">Pagamento 100% seguro e criptografado</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-16">
+<div class="max-w-7xl mx-auto px-4">
+<div class="grid md:grid-cols-4 gap-8 mb-12">
+<div>
+<h3 class="text-2xl font-['Pacifico'] mb-4">Arsenal</h3>
+<p class="text-gray-400 leading-relaxed">
+Sua ferramenta definitiva para dominar o mundo digital e alcançar resultados extraordinários.
+</p>
+<div class="flex space-x-4 mt-6">
+<div class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors cursor-pointer">
+<i class="ri-facebook-fill text-lg"></i>
+</div>
+<div class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors cursor-pointer">
+<i class="ri-instagram-line text-lg"></i>
+</div>
+<div class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors cursor-pointer">
+<i class="ri-youtube-line text-lg"></i>
+</div>
+<div class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors cursor-pointer">
+<i class="ri-linkedin-fill text-lg"></i>
+</div>
+</div>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-4">Produto</h4>
+<ul class="space-y-2 text-gray-400">
+<li><a href="#" class="hover:text-white transition-colors">Funcionalidades</a></li>
+<li><a href="#" class="hover:text-white transition-colors">Preços</a></li>
+<li><a href="#" class="hover:text-white transition-colors">Depoimentos</a></li>
+<li><a href="#" class="hover:text-white transition-colors">FAQ</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-4">Suporte</h4>
+<ul class="space-y-2 text-gray-400">
+<li><a href="#" class="hover:text-white transition-colors">Central de Ajuda</a></li>
+<li><a href="#" class="hover:text-white transition-colors">Contato</a></li>
+<li><a href="#" class="hover:text-white transition-colors">Comunidade</a></li>
+<li><a href="#" class="hover:text-white transition-colors">Status</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-4">Legal</h4>
+<ul class="space-y-2 text-gray-400">
+<li><a href="#" class="hover:text-white transition-colors">Termos de Uso</a></li>
+<li><a href="#" class="hover:text-white transition-colors">Política de Privacidade</a></li>
+<li><a href="#" class="hover:text-white transition-colors">Cookies</a></li>
+<li><a href="#" class="hover:text-white transition-colors">LGPD</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+<p class="text-gray-400 text-sm">
+© 2025 Arsenal. Todos os direitos reservados.
+</p>
+<div class="flex items-center space-x-6 mt-4 md:mt-0">
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-visa-fill text-2xl text-gray-400"></i>
+</div>
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-mastercard-fill text-2xl text-gray-400"></i>
+</div>
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-paypal-fill text-2xl text-gray-400"></i>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script id="hover-effects">
+document.addEventListener('DOMContentLoaded', function() {
+const cards = document.querySelectorAll('.card-hover');
+cards.forEach(card => {
+card.addEventListener('mouseenter', function() {
+this.style.transform = 'translateY(-4px)';
+});
+card.addEventListener('mouseleave', function() {
+this.style.transform = 'translateY(0)';
+});
+});
+});
+</script>
+<script id="smooth-scroll">
+document.addEventListener('DOMContentLoaded', function() {
+const buttons = document.querySelectorAll('button');
+buttons.forEach(button => {
+button.addEventListener('click', function(e) {
+e.preventDefault();
+this.style.transform = 'scale(0.98)';
+setTimeout(() => {
+this.style.transform = 'scale(1)';
+}, 150);
+});
+});
+});
+</script>
+<script id="social-interactions">
+document.addEventListener('DOMContentLoaded', function() {
+const socialIcons = document.querySelectorAll('footer .w-10');
+socialIcons.forEach(icon => {
+icon.addEventListener('click', function() {
+this.style.transform = 'scale(1.1)';
+setTimeout(() => {
+this.style.transform = 'scale(1)';
+}, 200);
+});
+});
+});
+</script>
+<script id="testimonial-slider">
+document.addEventListener('DOMContentLoaded', function() {
+const slider = document.querySelector('.testimonial-slider');
+const slides = document.querySelectorAll('.testimonial-slide');
+const prevButton = document.querySelector('.prev-button');
+const nextButton = document.querySelector('.next-button');
+const dotsContainer = document.querySelector('.dots-container');
+let currentSlide = 0;
+const slidesPerView = window.innerWidth >= 768 ? 3 : 1;
+const totalSlides = slides.length;
+const visibleSlides = Math.min(slidesPerView, totalSlides);
+
+function updateSliderPosition() {
+const offset = -currentSlide * (100 / visibleSlides);
+slider.style.transform = `translateX(${offset}%)`;
+updateDots();
+}
+
+function updateDots() {
+const totalDots = Math.ceil(totalSlides / visibleSlides);
+dotsContainer.innerHTML = '';
+for (let i = 0; i < totalDots; i++) {
+const dot = document.createElement('button');
+dot.classList.add('w-3', 'h-3', 'rounded-full', 'transition-colors', 'duration-300');
+dot.classList.add(i === Math.floor(currentSlide / visibleSlides) ? 'bg-primary' : 'bg-gray-300');
+dot.addEventListener('click', () => {
+currentSlide = i * visibleSlides;
+if (currentSlide > totalSlides - visibleSlides) {
+currentSlide = totalSlides - visibleSlides;
+}
+updateSliderPosition();
+});
+dotsContainer.appendChild(dot);
+}
+}
+
+prevButton.addEventListener('click', () => {
+if (currentSlide > 0) {
+currentSlide--;
+updateSliderPosition();
+}
+});
+
+nextButton.addEventListener('click', () => {
+if (currentSlide < totalSlides - visibleSlides) {
+currentSlide++;
+updateSliderPosition();
+}
+});
+
+updateSliderPosition();
+window.addEventListener('resize', () => {
+const newSlidesPerView = window.innerWidth >= 768 ? 3 : 1;
+if (newSlidesPerView !== slidesPerView) {
+location.reload();
+}
+});
+});
+</script>
+</body>
+</html>
