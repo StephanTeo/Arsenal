@@ -39,6 +39,7 @@ content: "\f3c2";
 }
 body {
 font-family: 'Inter', sans-serif;
+overflow-x: hidden;
 }
 .gradient-bg {
 background: linear-gradient(135deg, #1e3a8a 0%, #7c3aed 50%, #3730a3 100%);
@@ -53,28 +54,72 @@ box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 
 .section-bg {
 background: linear-gradient(to bottom, #f8fafc, #ffffff);
 }
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+.hero-title {
+font-size: 2.5rem !important;
+line-height: 1.2;
+}
+.hero-subtitle {
+font-size: 1.125rem !important;
+line-height: 1.5;
+}
+.stats-grid {
+grid-template-columns: 1fr !important;
+gap: 1rem !important;
+}
+.benefits-grid {
+grid-template-columns: 1fr !important;
+}
+.pricing-grid {
+grid-template-columns: 1fr !important;
+}
+.testimonial-card {
+min-width: 100% !important;
+}
+.mobile-padding {
+padding-left: 1rem !important;
+padding-right: 1rem !important;
+}
+.mobile-text-center {
+text-align: center !important;
+}
+}
+
+@media (max-width: 480px) {
+.hero-title {
+font-size: 2rem !important;
+}
+.section-title {
+font-size: 1.875rem !important;
+}
+.card-padding {
+padding: 1.5rem !important;
+}
+}
 </style>
 </head>
 <body class="bg-white text-gray-900">
 <!-- Header Hero Section -->
 <section class="gradient-bg min-h-screen flex items-center justify-center relative overflow-hidden" style="background-image: url('https://readdy.ai/api/search-image?query=modern%20digital%20workspace%20with%20holographic%20interface%20elements%2C%20futuristic%20technology%20background%2C%20dark%20blue%20and%20purple%20gradient%20atmosphere%2C%20minimalist%20design%2C%20professional%20tech%20environment%2C%20clean%20geometric%20patterns&width=1920&height=1080&seq=hero-bg&orientation=landscape'); background-size: cover; background-position: center;">
 <div class="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-purple-900/90"></div>
-<div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
-<div class="mb-8">
-<h1 class="text-white text-5xl font-['Pacifico'] mb-4">Arsenal</h1>
+<div class="relative z-10 text-center mobile-padding max-w-4xl mx-auto">
+<div class="mb-6 sm:mb-8">
+<h1 class="text-white text-4xl sm:text-5xl font-['Pacifico'] mb-4">Arsenal</h1>
 </div>
-<h2 class="text-white text-4xl md:text-6xl font-bold mb-6 leading-tight">
+<h2 class="hero-title text-white text-3xl sm:text-4xl md:text-6xl font-bold mb-6 leading-tight">
 O Arsenal do<br>
 Gestor de Tráfego para Negócios Locais
 </h2>
-<p class="text-blue-100 text-xl md:text-2xl mb-8 leading-relaxed max-w-3xl mx-auto">
+<p class="hero-subtitle text-blue-100 text-lg sm:text-xl md:text-2xl mb-8 leading-relaxed max-w-3xl mx-auto">
 Domine as estratégias e ferramentas que vão transformar você em um gestor de tráfego de alta performance para negócios locais
 </p>
-<button class="bg-white text-blue-900 px-8 py-4 text-lg font-semibold !rounded-button hover:bg-blue-50 transition-all duration-300 shadow-lg hover:shadow-xl whitespace-nowrap mb-8">
+<button class="bg-white text-blue-900 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold !rounded-button hover:bg-blue-50 transition-all duration-300 shadow-lg hover:shadow-xl mb-6 sm:mb-8 w-full sm:w-auto">
 Começar Agora
 </button>
-<div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 max-w-3xl mx-auto">
-<div class="grid md:grid-cols-3 gap-4 text-center">
+<div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-white/20 max-w-3xl mx-auto">
+<div class="stats-grid grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 text-center">
 <div>
 <div class="text-2xl font-bold text-white mb-1">97%</div>
 <div class="text-blue-100 text-sm">Taxa de Satisfação</div>
@@ -92,68 +137,68 @@ Começar Agora
 </div>
 </section>
 <!-- Benefits Section -->
-<section class="py-20 bg-white">
-<div class="max-w-7xl mx-auto px-4">
-<div class="text-center mb-16">
-<h2 class="text-4xl font-bold text-gray-900 mb-4">Por Que o Arsenal é Diferente?</h2>
-<p class="text-xl text-gray-600 max-w-2xl mx-auto">Aprenda com quem realmente entende de tráfego pago para negócios locais</p>
+<section class="py-12 sm:py-20 bg-white">
+<div class="max-w-7xl mx-auto mobile-padding">
+<div class="text-center mb-12 sm:mb-16">
+<h2 class="section-title text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Por Que o Arsenal é Diferente?</h2>
+<p class="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">Aprenda com quem realmente entende de tráfego pago para negócios locais</p>
 </div>
-<div class="grid md:grid-cols-3 gap-8">
-<div class="card-hover bg-white p-8 rounded-xl shadow-lg border border-gray-100">
-<div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
-<i class="ri-rocket-line text-2xl text-primary"></i>
+<div class="benefits-grid grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+<div class="card-hover bg-white card-padding p-6 sm:p-8 rounded-xl shadow-lg border border-gray-100">
+<div class="w-12 h-12 sm:w-16 sm:h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-4 sm:mb-6">
+<i class="ri-rocket-line text-xl sm:text-2xl text-primary"></i>
 </div>
-<h3 class="text-2xl font-bold text-gray-900 mb-4">Método Comprovado</h3>
-<p class="text-gray-600 leading-relaxed">Aprenda estratégias testadas e aprovadas que já geraram mais de 150 mil leads qualificados para negócios locais em diferentes nichos.</p>
+<h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">Método Comprovado</h3>
+<p class="text-gray-600 leading-relaxed text-sm sm:text-base">Aprenda estratégias testadas e aprovadas que já geraram mais de 150 mil leads qualificados para negócios locais em diferentes nichos.</p>
 </div>
-<div class="card-hover bg-white p-8 rounded-xl shadow-lg border border-gray-100">
-<div class="w-16 h-16 bg-secondary/10 rounded-xl flex items-center justify-center mb-6">
-<i class="ri-shield-check-line text-2xl text-secondary"></i>
+<div class="card-hover bg-white card-padding p-6 sm:p-8 rounded-xl shadow-lg border border-gray-100">
+<div class="w-12 h-12 sm:w-16 sm:h-16 bg-secondary/10 rounded-xl flex items-center justify-center mb-4 sm:mb-6">
+<i class="ri-shield-check-line text-xl sm:text-2xl text-secondary"></i>
 </div>
-<h3 class="text-2xl font-bold text-gray-900 mb-4">Ferramentas Exclusivas</h3>
-<p class="text-gray-600 leading-relaxed">Acesso a ferramentas que automatizam seu trabalho e templates prontos para usar em suas campanhas de tráfego pago.</p>
+<h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">Ferramentas Exclusivas</h3>
+<p class="text-gray-600 leading-relaxed text-sm sm:text-base">Acesso a ferramentas que automatizam seu trabalho e templates prontos para usar em suas campanhas de tráfego pago.</p>
 </div>
-<div class="card-hover bg-white p-8 rounded-xl shadow-lg border border-gray-100">
-<div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
-<i class="ri-user-star-line text-2xl text-primary"></i>
+<div class="card-hover bg-white card-padding p-6 sm:p-8 rounded-xl shadow-lg border border-gray-100">
+<div class="w-12 h-12 sm:w-16 sm:h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-4 sm:mb-6">
+<i class="ri-user-star-line text-xl sm:text-2xl text-primary"></i>
 </div>
-<h3 class="text-2xl font-bold text-gray-900 mb-4">Mentoria em Grupo</h3>
-<p class="text-gray-600 leading-relaxed">Encontros mensais ao vivo para tirar dúvidas, analisar campanhas e receber feedbacks diretos sobre seus projetos.</p>
+<h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">Mentoria em Grupo</h3>
+<p class="text-gray-600 leading-relaxed text-sm sm:text-base">Encontros mensais ao vivo para tirar dúvidas, analisar campanhas e receber feedbacks diretos sobre seus projetos.</p>
 </div>
 </div>
 </div>
 </section>
 <!-- Problem & Solution Section -->
-<section class="py-20 section-bg">
-<div class="max-w-7xl mx-auto px-4">
+<section class="py-12 sm:py-20 section-bg">
+<div class="max-w-7xl mx-auto mobile-padding">
 <!-- Problem -->
-<div class="grid md:grid-cols-2 gap-16 items-center mb-20">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-16 items-center mb-12 sm:mb-20">
 <div>
-<h2 class="text-4xl font-bold text-gray-900 mb-6">Problemas que Todo Gestor de Tráfego Enfrenta</h2>
-<div class="space-y-6">
-<div class="flex items-start space-x-4">
-<div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-<i class="ri-close-line text-red-600"></i>
+<h2 class="section-title text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">Problemas que Todo Gestor de Tráfego Enfrenta</h2>
+<div class="space-y-4 sm:space-y-6">
+<div class="flex items-start space-x-3 sm:space-x-4">
+<div class="w-6 h-6 sm:w-8 sm:h-8 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+<i class="ri-close-line text-red-600 text-sm sm:text-base"></i>
 </div>
-<p class="text-gray-700 text-lg">Campanhas que não geram resultados consistentes para seus clientes</p>
+<p class="text-gray-700 text-base sm:text-lg">Campanhas que não geram resultados consistentes para seus clientes</p>
 </div>
-<div class="flex items-start space-x-4">
-<div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-<i class="ri-close-line text-red-600"></i>
+<div class="flex items-start space-x-3 sm:space-x-4">
+<div class="w-6 h-6 sm:w-8 sm:h-8 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+<i class="ri-close-line text-red-600 text-sm sm:text-base"></i>
 </div>
-<p class="text-gray-700 text-lg">Dificuldade para captar e reter clientes que pagam bem</p>
+<p class="text-gray-700 text-base sm:text-lg">Dificuldade para captar e reter clientes que pagam bem</p>
 </div>
-<div class="flex items-start space-x-4">
-<div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-<i class="ri-close-line text-red-600"></i>
+<div class="flex items-start space-x-3 sm:space-x-4">
+<div class="w-6 h-6 sm:w-8 sm:h-8 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+<i class="ri-close-line text-red-600 text-sm sm:text-base"></i>
 </div>
-<p class="text-gray-700 text-lg">Falta de processos e ferramentas para otimizar o trabalho</p>
+<p class="text-gray-700 text-base sm:text-lg">Falta de processos e ferramentas para otimizar o trabalho</p>
 </div>
-<div class="flex items-start space-x-4">
-<div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-<i class="ri-close-line text-red-600"></i>
+<div class="flex items-start space-x-3 sm:space-x-4">
+<div class="w-6 h-6 sm:w-8 sm:h-8 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+<i class="ri-close-line text-red-600 text-sm sm:text-base"></i>
 </div>
-<p class="text-gray-700 text-lg">Insegurança para cobrar honorários mais altos pelo seu trabalho</p>
+<p class="text-gray-700 text-base sm:text-lg">Insegurança para cobrar honorários mais altos pelo seu trabalho</p>
 </div>
 </div>
 </div>
