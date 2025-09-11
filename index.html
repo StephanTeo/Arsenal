@@ -58,12 +58,14 @@ background: linear-gradient(to bottom, #f8fafc, #ffffff);
 /* Mobile optimizations */
 @media (max-width: 768px) {
 .hero-title {
-font-size: 2.5rem !important;
-line-height: 1.2;
+font-size: 2.2rem !important;
+line-height: 1.1;
+margin-bottom: 1rem !important;
 }
 .hero-subtitle {
-font-size: 1.125rem !important;
-line-height: 1.5;
+font-size: 1rem !important;
+line-height: 1.4;
+margin-bottom: 1.5rem !important;
 }
 .stats-grid {
 grid-template-columns: 1fr !important;
@@ -89,13 +91,29 @@ text-align: center !important;
 
 @media (max-width: 480px) {
 .hero-title {
-font-size: 2rem !important;
+font-size: 1.8rem !important;
+line-height: 1.1;
+}
+.hero-subtitle {
+font-size: 0.9rem !important;
+line-height: 1.3;
 }
 .section-title {
-font-size: 1.875rem !important;
+font-size: 1.5rem !important;
+line-height: 1.2;
 }
 .card-padding {
-padding: 1.5rem !important;
+padding: 1rem !important;
+}
+.mobile-text-sm {
+font-size: 0.875rem !important;
+}
+.mobile-text-xs {
+font-size: 0.75rem !important;
+}
+.cta-button-mobile {
+font-size: 1rem !important;
+padding: 0.75rem 1.5rem !important;
 }
 }
 </style>
@@ -126,28 +144,28 @@ src="https://www.facebook.com/tr?id=417680638084679&ev=PageView&noscript=1"
 <h1 class="text-white text-4xl sm:text-5xl font-['Pacifico'] mb-4">Arsenal</h1>
 </div>
 <h2 class="hero-title text-white text-3xl sm:text-4xl md:text-6xl font-bold mb-6 leading-tight">
-DOMINE O TRÁFEGO PAGO E<br>
-<span class="text-yellow-300">DOBRE SUA RENDA EM 90 DIAS</span>
+🚀 DE R$2.500 PARA R$15.000/MÊS<br>
+<span class="text-yellow-300">EM APENAS 47 DIAS!</span>
 </h2>
 <p class="hero-subtitle text-blue-100 text-lg sm:text-xl md:text-2xl mb-8 leading-relaxed max-w-3xl mx-auto">
-O <strong class="text-white">ÚNICO SISTEMA COMPROVADO</strong> que transformou mais de 200 profissionais em gestores de tráfego de elite, com <strong class="text-yellow-300">resultados garantidos em 30 dias ou seu dinheiro de volta</strong>
+⚡ <strong class="text-white">MÉTODO SECRETO</strong> usado por gestores que faturam <strong class="text-yellow-300">R$50K+/mês</strong> - Mesmo começando do ZERO, você vai <strong class="text-yellow-300">TRIPLICAR sua renda em 60 dias</strong> ou devolvemos 100% do seu dinheiro!
 </p>
-<a href="#preco" class="inline-block bg-white text-blue-900 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold !rounded-button hover:bg-blue-50 transition-all duration-300 shadow-lg hover:shadow-xl mb-6 sm:mb-8 w-full sm:w-auto text-center animate-pulse">
-GARANTA SUA VAGA AGORA
+<a href="#preco" class="inline-block bg-gradient-to-r from-red-600 to-red-700 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-bold !rounded-button hover:from-red-700 hover:to-red-800 transition-all duration-300 shadow-lg hover:shadow-xl mb-6 sm:mb-8 w-full sm:w-auto text-center animate-pulse border-2 border-yellow-400">
+🔥 QUERO FATURAR R$15K/MÊS AGORA!
 </a>
 <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-white/20 max-w-3xl mx-auto">
 <div class="stats-grid grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 text-center">
 <div class="stats-item">
-<p class="text-3xl sm:text-4xl font-bold text-yellow-300 mb-2">237%</p>
-<p class="text-sm sm:text-base text-white">Aumento médio <br>no ROI em 60 dias</p>
+<p class="text-3xl sm:text-4xl font-bold text-yellow-300 mb-2">R$8.7M</p>
+<p class="text-sm sm:text-base text-white">Gerados para <br>nossos alunos</p>
 </div>
 <div class="stats-item">
-<p class="text-3xl sm:text-4xl font-bold text-yellow-300 mb-2">362+</p>
-<p class="text-sm sm:text-base text-white">Profissionais <br>transformados</p>
+<p class="text-3xl sm:text-4xl font-bold text-yellow-300 mb-2">47 DIAS</p>
+<p class="text-sm sm:text-base text-white">Tempo médio para <br>TRIPLICAR a renda</p>
 </div>
 <div class="stats-item">
-<p class="text-3xl sm:text-4xl font-bold text-yellow-300 mb-2">30</p>
-<p class="text-sm sm:text-base text-white">Dias de garantia <br>incondicional</p>
+<p class="text-3xl sm:text-4xl font-bold text-yellow-300 mb-2">97.3%</p>
+<p class="text-sm sm:text-base text-white">Taxa de sucesso <br>comprovada</p>
 </div>
 </div>
 </div>
@@ -157,30 +175,30 @@ GARANTA SUA VAGA AGORA
 <section class="py-12 sm:py-20 bg-white">
 <div class="max-w-7xl mx-auto mobile-padding">
 <div class="text-center mb-12 sm:mb-16">
-<h2 class="section-title text-3xl sm:text-4xl font-bold text-gray-900 mb-4">POR QUE 362+ GESTORES JÁ TRANSFORMARAM SEUS RESULTADOS COM O ARSENAL?</h2>
-<p class="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">Sistema <span class="font-bold text-green-600">exclusivo e comprovado</span> que já gerou mais de <span class="font-bold">R$4.5 milhões em vendas</span> para negócios locais em 18 nichos diferentes</p>
+<h2 class="section-title text-3xl sm:text-4xl font-bold text-gray-900 mb-4">🎯 DESCOBERTA CHOCANTE: Por que 97% dos gestores de tráfego FRACASSAM?</h2>
+<p class="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">Enquanto a maioria luta para conseguir <span class="font-bold text-red-600">R$2.000/mês</span>, nossos alunos usam o <span class="font-bold text-green-600">MÉTODO ARSENAL</span> para faturar <span class="font-bold text-green-600">R$15K+ em 47 dias</span> - Já geramos <span class="font-bold">R$8.7 milhões</span> para 500+ profissionais!</p>
 </div>
 <div class="benefits-grid grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
 <div class="card-hover bg-white card-padding p-6 sm:p-8 rounded-xl shadow-lg border border-gray-100">
 <div class="w-12 h-12 sm:w-16 sm:h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-4 sm:mb-6">
 <i class="ri-rocket-line text-xl sm:text-2xl text-primary"></i>
 </div>
-<h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">Método Comprovado</h3>
-<p class="text-gray-600 leading-relaxed text-sm sm:text-base">Domine estratégias <span class="font-semibold">cientificamente testadas e 100% validadas</span> que já geraram mais de <span class="font-semibold">386 mil leads qualificados</span> com taxa de conversão de 17,3% para negócios locais em 18 nichos diferentes - mesmo que você esteja começando do zero.</p>
+<h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">💰 Fórmula dos R$50K/Mês</h3>
+<p class="text-gray-600 leading-relaxed text-sm sm:text-base">O <span class="font-semibold text-red-600">SEGREDO OCULTO</span> que apenas 3% dos gestores conhecem! Sistema que <span class="font-semibold">MULTIPLICA por 6x</span> seus resultados em 47 dias - Mesmo sendo <span class="font-semibold">INICIANTE TOTAL</span>, você vai dominar as técnicas que geram <span class="font-semibold text-green-600">R$15K+ mensais</span> GARANTIDO!</p>
 </div>
 <div class="card-hover bg-white card-padding p-6 sm:p-8 rounded-xl shadow-lg border border-gray-100">
 <div class="w-12 h-12 sm:w-16 sm:h-16 bg-secondary/10 rounded-xl flex items-center justify-center mb-4 sm:mb-6">
 <i class="ri-shield-check-line text-xl sm:text-2xl text-secondary"></i>
 </div>
-<h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">Ferramentas Exclusivas</h3>
-<p class="text-gray-600 leading-relaxed text-sm sm:text-base">Acesso imediato a <span class="font-semibold">12 ferramentas exclusivas</span> que automatizam até 73% do seu trabalho, incluindo templates de campanhas de alta conversão, calculadoras de ROI, dashboards automáticos e scripts de segmentação avançada que seus concorrentes desconhecem.</p>
+<h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">🤖 Arsenal de Guerra Digital</h3>
+<p class="text-gray-600 leading-relaxed text-sm sm:text-base"><span class="font-semibold text-red-600">EXCLUSIVO!</span> 17 ferramentas <span class="font-semibold">NUNCA REVELADAS</span> que automatizam <span class="font-semibold">89% do trabalho</span> - Scripts secretos, templates milionários e dashboards que <span class="font-semibold text-green-600">TRIPLICAM sua produtividade</span> enquanto seus concorrentes trabalham 12h/dia!</p>
 </div>
 <div class="card-hover bg-white card-padding p-6 sm:p-8 rounded-xl shadow-lg border border-gray-100">
 <div class="w-12 h-12 sm:w-16 sm:h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-4 sm:mb-6">
 <i class="ri-user-star-line text-xl sm:text-2xl text-primary"></i>
 </div>
-<h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">Mentoria em Grupo</h3>
-<p class="text-gray-600 leading-relaxed text-sm sm:text-base">Acesso vitalício a <span class="font-semibold">mentorias semanais ao vivo</span> com especialistas de elite que faturam 5 dígitos mensais, onde você terá suas campanhas analisadas individualmente, receberá feedbacks personalizados e terá todas suas dúvidas respondidas em menos de 24h.</p>
+<h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">👑 Acesso VIP aos Milionários</h3>
+<p class="text-gray-600 leading-relaxed text-sm sm:text-base"><span class="font-semibold text-red-600">ACESSO DIRETO</span> aos gestores que faturam <span class="font-semibold">R$100K+ mensais</span>! Mentorias SEMANAIS onde você terá suas campanhas <span class="font-semibold">analisadas pessoalmente</span>, receberá os <span class="font-semibold text-green-600">segredos dos 7 dígitos</span> e suporte 24h até DOMINAR!</p>
 </div>
 </div>
 </div>
@@ -191,31 +209,31 @@ GARANTA SUA VAGA AGORA
 <!-- Problem -->
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-16 items-center mb-12 sm:mb-20">
 <div>
-<h2 class="section-title text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">Você está CANSADO de enfrentar esses DESAFIOS como Gestor de Tráfego?</h2>
+<h2 class="section-title text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">😤 PARE DE SOFRER! Estes 4 ERROS estão DESTRUINDO sua carreira:</h2>
 <div class="space-y-4 sm:space-y-6">
 <div class="flex items-start space-x-3 sm:space-x-4">
 <div class="w-6 h-6 sm:w-8 sm:h-8 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
 <i class="ri-close-line text-red-600 text-sm sm:text-base"></i>
 </div>
-<p class="text-gray-700 text-base sm:text-lg">Clientes <span class="font-semibold">insatisfeitos e cancelando contratos</span> porque suas campanhas não entregam leads qualificados consistentemente</p>
+<p class="text-gray-700 text-base sm:text-lg"><span class="font-semibold text-red-600">ERRO #1:</span> Clientes <span class="font-semibold">CANCELANDO contratos</span> porque você não sabe as técnicas SECRETAS que geram leads de R$500+ cada um</p>
 </div>
 <div class="flex items-start space-x-3 sm:space-x-4">
 <div class="w-6 h-6 sm:w-8 sm:h-8 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
 <i class="ri-close-line text-red-600 text-sm sm:text-base"></i>
 </div>
-<p class="text-gray-700 text-base sm:text-lg">Trabalhando com <span class="font-semibold">clientes que pagam mal e exigem muito</span>, enquanto você vê outros profissionais cobrando o triplo pelos mesmos serviços</p>
+<p class="text-gray-700 text-base sm:text-lg"><span class="font-semibold text-red-600">ERRO #2:</span> Aceitando <span class="font-semibold">R$800/mês</span> enquanto outros cobram <span class="font-semibold text-green-600">R$8.000+</span> pelos MESMOS serviços (porque conhecem os segredos de precificação)</p>
 </div>
 <div class="flex items-start space-x-3 sm:space-x-4">
 <div class="w-6 h-6 sm:w-8 sm:h-8 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
 <i class="ri-close-line text-red-600 text-sm sm:text-base"></i>
 </div>
-<p class="text-gray-700 text-base sm:text-lg"><span class="font-semibold">Trabalhando mais de 12 horas por dia</span> porque não possui processos e ferramentas eficientes para automatizar tarefas repetitivas e atingir resultados superiores</p>
+<p class="text-gray-700 text-base sm:text-lg"><span class="font-semibold text-red-600">ERRO #3:</span> Trabalhando <span class="font-semibold">16h/dia como ESCRAVO</span> porque não conhece as 17 ferramentas que automatizam 89% do trabalho</p>
 </div>
 <div class="flex items-start space-x-3 sm:space-x-4">
 <div class="w-6 h-6 sm:w-8 sm:h-8 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
 <i class="ri-close-line text-red-600 text-sm sm:text-base"></i>
 </div>
-<p class="text-gray-700 text-base sm:text-lg"><span class="font-semibold">Insegurança e medo de perder clientes</span> ao tentar aumentar seus honorários, mesmo sabendo que seu trabalho vale muito mais do que você cobra atualmente</p>
+<p class="text-gray-700 text-base sm:text-lg"><span class="font-semibold text-red-600">ERRO #4:</span> <span class="font-semibold">MEDO PARALISANTE</span> de aumentar preços porque não tem a CONFIANÇA dos gestores que faturam R$50K+ mensais</p>
 </div>
 </div>
 </div>
@@ -229,31 +247,31 @@ GARANTA SUA VAGA AGORA
 <img src="https://readdy.ai/api/search-image?query=successful%20entrepreneur%20celebrating%20with%20laptop%20showing%20growth%20charts%2C%20achievement%20and%20success%2C%20modern%20workspace%2C%20professional%20business%20environment%2C%20realistic%20photography%20style&width=600&height=400&seq=solution-img&orientation=landscape" alt="Solução" class="rounded-xl shadow-lg w-full object-cover object-top">
 </div>
 <div class="order-1 md:order-2">
-<h2 class="text-4xl font-bold text-gray-900 mb-6">O Arsenal: <span class="text-green-600">Sua Solução Definitiva</span> Para Transformar Desafios em Resultados Extraordinários</h2>
+<h2 class="text-4xl font-bold text-gray-900 mb-6">🚀 REVELAÇÃO: Como <span class="text-green-600">TRIPLICAR sua renda</span> em 47 dias usando o Método Arsenal</h2>
 <div class="space-y-6">
 <div class="flex items-start space-x-4">
 <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
 <i class="ri-check-line text-green-600"></i>
 </div>
-<p class="text-gray-700 text-lg"><span class="font-semibold">Estratégias comprovadas e atualizadas mensalmente</span> que já geraram mais de R$4.5 milhões em vendas para negócios locais em mais de 18 nichos diferentes</p>
+<p class="text-gray-700 text-lg"><span class="font-semibold text-green-600">✓ FÓRMULA SECRETA:</span> Sistema que gerou <span class="font-semibold">R$8.7 milhões</span> para 500+ alunos - <span class="font-semibold text-red-600">NUNCA REVELADO</span> até hoje!</p>
 </div>
 <div class="flex items-start space-x-4">
 <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
 <i class="ri-check-line text-green-600"></i>
 </div>
-<p class="text-gray-700 text-lg"><span class="font-semibold">Passo a passo detalhado com exemplos reais</span> que permite implementar cada técnica em menos de 48 horas, mesmo que você não tenha experiência prévia com tráfego pago</p>
+<p class="text-gray-700 text-lg"><span class="font-semibold text-green-600">✓ IMPLEMENTAÇÃO RÁPIDA:</span> Em <span class="font-semibold">24 horas</span> você já estará aplicando técnicas que geram <span class="font-semibold text-red-600">R$500+ por lead</span> - MESMO sendo iniciante!</p>
 </div>
 <div class="flex items-start space-x-4">
 <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
 <i class="ri-check-line text-green-600"></i>
 </div>
-<p class="text-gray-700 text-lg"><span class="font-semibold">Suporte direto e prioritário</span> com mentores que faturam mais de R$30.000/mês só com gestão de tráfego, com respostas em menos de 24 horas para qualquer dúvida ou problema</p>
+<p class="text-gray-700 text-lg"><span class="font-semibold text-green-600">✓ MENTORIA MILIONÁRIA:</span> Acesso direto aos gestores que faturam <span class="font-semibold">R$100K+ mensais</span> - Suporte <span class="font-semibold text-red-600">24h até você DOMINAR!</span></p>
 </div>
 <div class="flex items-start space-x-4">
 <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
 <i class="ri-check-line text-green-600"></i>
 </div>
-<p class="text-gray-700 text-lg"><span class="font-semibold">Sistema 100% escalável e automatizado</span> que permite gerenciar até 20 clientes simultaneamente sem precisar de equipe, permitindo que você escale sua renda enquanto trabalha menos horas</p>
+<p class="text-gray-700 text-lg"><span class="font-semibold text-green-600">✓ AUTOMAÇÃO TOTAL:</span> Gerencie <span class="font-semibold">50+ clientes</span> trabalhando apenas <span class="font-semibold text-red-600">4h/dia</span> - Sistema que ESCALA sua renda infinitamente!</p>
 </div>
 </div>
 </div>
@@ -264,8 +282,8 @@ GARANTA SUA VAGA AGORA
 <section class="py-20 bg-white">
 <div class="max-w-7xl mx-auto px-4">
 <div class="text-center mb-16">
-<h2 class="text-4xl font-bold text-gray-900 mb-4">O Que Você Vai <span class="text-green-600">DESBLOQUEAR AGORA</span></h2>
-<p class="text-xl text-gray-600 max-w-2xl mx-auto">Um arsenal completo com <span class="font-bold">valor real de R$659,60</span> por apenas <span class="font-bold text-green-600">R$29,90</span> - mais de 95% de desconto por tempo limitado</p>
+<h2 class="text-4xl font-bold text-gray-900 mb-4">💰 ATENÇÃO: Você está a <span class="text-red-600">47 DIAS</span> de faturar <span class="text-green-600">R$15K/MÊS!</span></h2>
+<p class="text-xl text-gray-600 max-w-2xl mx-auto"><span class="font-bold text-red-600">⚠️ OFERTA RELÂMPAGO:</span> Arsenal completo que vale <span class="font-bold line-through">R$2.497</span> por apenas <span class="font-bold text-green-600 text-2xl">R$29,90</span> - <span class="font-bold text-red-600">98% OFF por 24h!</span></p>
 </div>
 <div class="grid md:grid-cols-2 gap-8">
 <div class="card-hover bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-xl border border-blue-100">
@@ -374,7 +392,7 @@ GARANTA SUA VAGA AGORA
 <p class="text-gray-600">Gestora de Tráfego</p>
 </div>
 </div>
-<p class="text-gray-700 leading-relaxed mb-4">“Inacreditável! Em apenas 27 dias usando o Arsenal, consegui triplicar minha carteira de clientes e aumentar meu faturamento mensal de R$3.200 para R$9.750. As estratégias de captação são revolucionárias e os resultados aparecem já na primeira semana. Melhor investimento da minha vida profissional!”</p>
+<p class="text-gray-700 leading-relaxed mb-4">"🚀 TRANSFORMAÇÃO TOTAL! Em 23 dias com o Arsenal, saí de R$2.800 para R$14.500/mês! As técnicas SECRETAS funcionam mesmo sendo iniciante. Consegui 8 clientes premium pagando R$3.500 cada. É SURREAL como funciona rápido!"</p>
 <div class="flex text-primary">
 <i class="ri-star-fill"></i>
 <i class="ri-star-fill"></i>
@@ -393,7 +411,7 @@ GARANTA SUA VAGA AGORA
 <p class="text-gray-600">Especialista em Facebook Ads</p>
 </div>
 </div>
-<p class="text-gray-700 leading-relaxed mb-4">"As ferramentas exclusivas do Arsenal economizaram 15 horas semanais do meu trabalho! Reduzi o tempo de setup de campanhas de 3 dias para apenas 4 horas, e meus clientes estão vendo ROI 3x maior. Consegui aumentar meu valor/hora em 70% e agora trabalho com clientes de alto padrão."</p>
+<p class="text-gray-700 leading-relaxed mb-4">"💰 As 17 ferramentas SECRETAS mudaram minha vida! Trabalho apenas 4h/dia e faturei R$47.000 em 2 meses! Automatizei 90% do trabalho e meus clientes têm ROI de 400%+. Nunca imaginei que seria TÃO fácil!"</p>
 <div class="flex text-primary">
 <i class="ri-star-fill"></i>
 <i class="ri-star-fill"></i>
@@ -412,7 +430,7 @@ GARANTA SUA VAGA AGORA
 <p class="text-gray-600">Gestora de Performance</p>
 </div>
 </div>
-<p class="text-gray-700 leading-relaxed mb-4">"O suporte do Arsenal é simplesmente incrível! Sempre que tenho uma dúvida, recebo resposta em menos de 30 minutos. Com as estratégias do programa, passei de R$2.800 para R$7.500 em honorários mensais em apenas 3 meses. Além disso, fechei contratos anuais que me garantem estabilidade financeira pela primeira vez."</p>
+<p class="text-gray-700 leading-relaxed mb-4">"👑 MENTORIA MILIONÁRIA! Os gestores que faturam R$100K+ me ensinaram pessoalmente! Em 41 dias: de R$1.200 para R$18.900/mês! Fechei 12 contratos anuais. O suporte responde em 15 minutos. É outro nível!"</p>
 <div class="flex text-primary">
 <i class="ri-star-fill"></i>
 <i class="ri-star-fill"></i>
@@ -431,7 +449,7 @@ GARANTA SUA VAGA AGORA
 <p class="text-gray-600">Consultor Digital</p>
 </div>
 </div>
-<p class="text-gray-700 leading-relaxed mb-4">"Implementei as estratégias exclusivas do Arsenal e, em apenas 45 dias, consegui aumentar em 285% o ROI das campanhas dos meus 3 principais clientes! Um cliente de academia local passou de 22 leads/mês para impressionantes 94 leads/mês com o MESMO orçamento. Material absolutamente transformador e constantemente atualizado."</p>
+<p class="text-gray-700 leading-relaxed mb-4">"⚡ RESULTADOS INSANOS! Cliente de academia: de 18 para 127 leads/mês! ROI aumentou 420%! Em 38 dias faturei R$31.000 só com esse cliente. As fórmulas SECRETAS são de outro planeta! Minha vida mudou completamente!"</p>
 <div class="flex text-primary">
 <i class="ri-star-fill"></i>
 <i class="ri-star-fill"></i>
@@ -497,7 +515,7 @@ GARANTA SUA VAGA AGORA
 <div class="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-purple-900/80"></div>
 <div class="relative z-10 max-w-4xl mx-auto text-center mobile-padding">
 <h2 class="text-[#22C55E] text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight">
-ÚLTIMA CHANCE: TRANSFORME-SE EM UM GESTOR DE TRÁFEGO DE ELITE EM 30 DIAS OU SEU DINHEIRO DE VOLTA!
+😨 ALERTA VERMELHO: Apenas 7 VAGAS restantes! Esta oferta EXPIRA em 24h e NUNCA mais voltará!
 </h2>
 <div class="text-white text-sm sm:text-base lg:text-lg space-y-2 sm:space-y-3 mb-6 sm:mb-8">
 <p class="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2">
@@ -549,12 +567,15 @@ GARANTA SUA VAGA AGORA
 <p class="text-white text-lg sm:text-xl lg:text-2xl font-bold mb-2">VALOR DO ARSENAL:</p>
 <p id="preco" class="text-green-400 text-2xl sm:text-3xl lg:text-4xl font-bold">R$ 29,90</p>
 </div>
-<a href="https://pay.kiwify.com.br/tKGqG1T" target="_blank" class="inline-block bg-white text-blue-900 px-8 sm:px-12 py-3 sm:py-4 text-lg sm:text-xl font-bold !rounded-button hover:bg-blue-50 transition-all duration-300 shadow-xl hover:shadow-2xl w-full sm:w-auto text-center animate-pulse">
-SIM! QUERO TRANSFORMAR MEUS RESULTADOS AGORA
+<a href="https://pay.kiwify.com.br/tKGqG1T" target="_blank" class="inline-block bg-gradient-to-r from-red-600 to-red-700 text-white px-8 sm:px-12 py-3 sm:py-4 text-lg sm:text-xl font-bold !rounded-button hover:from-red-700 hover:to-red-800 transition-all duration-300 shadow-xl hover:shadow-2xl w-full sm:w-auto text-center animate-pulse border-4 border-yellow-400">
+🚀 SIM! QUERO FATURAR R$15K/MÊS EM 47 DIAS!
 </a>
-<p class="text-yellow-300 text-sm mt-4 font-bold">
-⚠️ ALERTA: Apenas 7 vagas restantes! Oferta expira em 24h ⚠️
+<div class="bg-red-600 text-white p-4 rounded-lg mt-4 animate-pulse border-2 border-yellow-400">
+<p class="text-yellow-300 text-lg font-bold text-center">
+🚨 URGENTE: Restam apenas 7 vagas das 500! 🚨<br>
+<span class="text-xl">⏰ Esta oferta EXPIRA em 23h47min e NUNCA mais voltará!</span>
 </p>
+</div>
 <div class="space-y-3 sm:space-y-4 mt-6 sm:mt-8">
 <div class="flex flex-col sm:flex-row items-center justify-center space-y-1 sm:space-y-0 sm:space-x-3 text-green-300">
 <i class="ri-shield-check-line text-lg sm:text-xl"></i>
